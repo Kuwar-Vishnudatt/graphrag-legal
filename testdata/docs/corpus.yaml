@@ -1,0 +1,77 @@
+sections:
+  - id: s1-retention
+    title: "Section 1: General Data Retention Rule"
+    text: >
+      This regulation establishes a general data retention period of
+      90 days from the date of collection. Data controllers must delete
+      personal data once this period has elapsed, unless an exception
+      elsewhere in this regulation applies.
+    refs:
+      - target: s9-healthcare-exception
+        kind: exception_to
+      - target: s3-breach-notification
+        kind: references
+
+  - id: s2-access-rights
+    title: "Section 2: Right of Access"
+    text: >
+      Any individual may request a copy of the personal data a
+      controller holds about them, and the controller must respond
+      within 30 days.
+
+  - id: s3-breach-notification
+    title: "Section 3: Breach Notification"
+    text: >
+      A controller must notify affected individuals within 72 hours of
+      discovering a data breach involving their personal data.
+
+  - id: s4-original-breach-window
+    title: "Section 4: Original Breach Notification Window (1998)"
+    text: >
+      The original 1998 Act required breach notification within 30 days
+      of discovery.
+    refs:
+      - target: s5-2015-amendment
+        kind: references
+
+  - id: s5-2015-amendment
+    title: "Section 5: 2015 Amendment"
+    text: >
+      This section amends Section 4 of the 1998 Act, shortening the
+      breach notification window from 30 days to 72 hours, as now
+      reflected in Section 3.
+    refs:
+      - target: s4-original-breach-window
+        kind: amends
+      - target: s3-breach-notification
+        kind: references
+
+  - id: s9-healthcare-exception
+    title: "Section 9: Healthcare Data Exception"
+    text: >
+      Notwithstanding the general retention period in the preceding
+      section, Sensitive Data processed by a healthcare provider for
+      treatment purposes may be retained for up to 7 years from the
+      date of the patient's last treatment, to comply with applicable
+      medical recordkeeping standards.
+    refs:
+      - target: s1-retention
+        kind: references
+
+  - id: def-sensitive-data
+    title: "Section 1(a): Definition of Sensitive Data"
+    text: >
+      "Sensitive Data" means any Biometric Identifier, genetic
+      information, or information concerning an individual's physical
+      or mental health, including health records held by a healthcare
+      provider.
+    defined_terms:
+      - "Sensitive Data"
+
+  - id: def-biometric-identifier
+    title: "Section 1(b): Definition of Biometric Identifier"
+    text: >
+      "Biometric Identifier" means a fingerprint, retina scan, or
+      voiceprint used to identify an individual.
+    defined_terms:
+      - "Biometric Identifier"
